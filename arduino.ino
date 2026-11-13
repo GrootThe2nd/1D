@@ -7,7 +7,7 @@ long BallPos = 0;
 double Setpoint ;
 double Input ;
 double Output ;
-double Kp=0.1, Ki=0, Kd=0;
+double Kp=0.1, Ki=0, Kd=0.01;
 
 PID myPID(&Input, &Output, &Setpoint, Kp, Ki, Kd, DIRECT);
 
